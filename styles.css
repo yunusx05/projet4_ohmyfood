@@ -11,16 +11,32 @@
     font-family: roboto;
 
 
+
+}
+
+h4 {
+
+    margin: 0;
+    padding: 0;
+}
+
+p {
+
+    margin: 0;
+    padding: 0;
 }
 
 a {
 
     color: inherit;
+
 }
 
-ul{
+ul {
     padding: 0;
 }
+
+
 
 
 
@@ -31,14 +47,22 @@ body {
 }
 
 
+
+/* Mobile_first */
+
+
+/* Header_start */
+
+/* Logo_ohmyfood_start */
+
+
 .logo_ohmyfood img {
 
     width: 162px;
 
-
-
-
 }
+
+
 
 .logo_ohmyfood {
 
@@ -79,149 +103,140 @@ body {
 }
 
 
-.titre_button {
-
-    background-color: #F7F7F7;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding: 20px;
-    height: 300px;
 
 
-}
+/* functioning__list_start */
 
-.titre_button p{
+.numbers {
 
-    color: #353535;
-}
-
-.button_explorer {
-
-    height: 50px;
-    border-radius: 25px;
-    font-size: 16px;
-    margin: 0 82px;
-    background: linear-gradient(180deg, rgba(255, 121, 218, 1) 0%, rgba(147, 86, 220, 1) 100%);
+    position: absolute;
+    background: #9356DC;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
     color: white;
-    border: none;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 24px;
+    margin-left: -8px;
 
 }
 
-
-.Container_Filtres_icons {
+.container--functioning__list {
     padding: 20px;
     padding-bottom: 65px;
 
 }
 
-.filters {
+.task--functioning__list {
 
-    
+
     display: flex;
     flex-direction: column;
     gap: 30px;
 }
 
-.filter-container{
+.task-container__list {
 
-    
+
     height: 72.38px;
     border-radius: 20px;
     background-color: #F6F6F6;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
     text-align: center;
+    width: 100%;
 }
 
 
-.filters :hover{
 
-    background-color: #F5EDFF;
-}
-.filter {
+.task {
 
+    margin-top: 24px;
+    font-weight: bolder;
+    margin-left: -38px;
 
-
-   margin-top: 24px;
-   font-weight: bolder;
-   margin-left: -38px;
 
 
 
 }
 
 
-.filter i {
+.task i {
 
     color: #7E7E7E;
     font-size: 20px;
-}
-
-.filter i:hover{
-
-    color: #9356DC;
+    margin-right: 9px;
 }
 
 
 
-.Container_Filtres_icons i {
-    
 
-    padding-right: 27px;
-    
-    
-
-}
-
-
-.Title_filtres {
+.Title--functioning__list {
 
     font-size: 17px;
     font-weight: bolder;
 
 }
 
+/* functioning__list_end */
 
 
-.Container_cards_left {
 
-    
-    
+/* restaurants_cards_start */
+
+.container--restaurants__cards {
+
+
+
     background-color: #F2F2F2;
     padding: 68px 17px;
     padding-top: 42px;
 }
 
 
+.pop-up {
 
-.card_left_wrapper {
+    position: absolute;
+    width: 83px;
+    height: 29px;
+    background: #99E2D0;
+    font-size: 16px;
+    color: #008766;
+    text-align: center;
+    right: 34px;
+    margin-top: 10px;
+    padding: 5px 6px;
+}
 
-display: flex;
-flex-direction: column;
-gap: 19px;
-   
+
+.cards--block {
+
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
+
 
 
 }
 
 
 
-.Card_block_left {
+.cards {
 
     background-color: #fdfcfc;
     border-radius: 20px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     width: 100%;
     height: 294px;
-    
+
 
 
 }
 
 
 
-.img_card_left {
+.img_cards {
 
 
     object-fit: cover;
@@ -232,7 +247,7 @@ gap: 19px;
 
 }
 
-.text_card_left {
+.text_cards {
 
     display: flex;
     flex-direction: column;
@@ -242,7 +257,7 @@ gap: 19px;
 
 }
 
-.text_card_left h3 {
+.text_cards h3 {
 
     font-size: 14px;
     font-weight: 700;
@@ -252,7 +267,7 @@ gap: 19px;
 
 }
 
-.text_card_left p {
+.text_cards p {
 
 
     font-size: 14px;
@@ -265,77 +280,302 @@ gap: 19px;
 
 
 
-.icon_stars_card_left {
+.icons--cards {
     font-size: 21px;
     display: flex;
     justify-content: flex-end;
-    
+
 }
 
-.icon_stars_card_left i {
+.icons--cards i {
 
     margin-top: -33px;
 }
 
+/* restaurants_cards_end */
 
 
 
-.footer{
 
-   
-    background-color:#353535;
-    color: white ;
+
+/* footer_start */
+
+.footer {
+
+
+    background-color: #353535;
+    color: white;
     padding: 15px 25px;
     height: 197px;
 }
 
-.footer h1{
+.footer h1 {
 
- font-size: 18px;
- font-family: 'Shrikhand',italic 
+    font-size: 18px;
+    font-family: 'Shrikhand', italic;
+    font-weight: 400;
 
 }
 
-.footer ul{
+.footer ul {
 
-    
+
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
+
 .footer li i {
 
     margin-right: 10px;
+
 }
 
 
-/* Page 2 menu  */
+
+/* footer_end */
 
 
-.logo_ohmyfood_deux{
 
-    text-align: center;
-    padding: 20px 0 5px;
-    width: 100%;
-    position: relative;
+
+
+
+
+
+/* Page-menu--1  */
+
+
+/* header--first--menu--start */
+
+
+.first-menu--logo__ohmyfood {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 15px;
+
+
 }
 
-.img_menu_un img{
+.arrow--left {
+
+    font-size: 20px;
+
+}
+
+.first-menu--logo__ohmyfood img {
+
+    width: 162px;
+    margin-right: 61px;
+
+}
+
+
+.first-menu--img__ img {
 
     height: 275px;
     width: 100%;
-    
-    
+    object-fit: cover;
+
+
 
 }
 
-.titre_menu_un{
-    
+/* header--first--menu--end */
+
+
+/* first--menu--title--start */
+
+
+.first-menu--title__headline {
+
     display: flex;
     justify-content: space-around;
     align-items: center;
+    position: relative;
+    background: #F7F7F7;
+    border-radius: 40px 40px 0px 0px;
+    margin-top: -46px;
+
+}
+
+.first-menu--title__headline h1 {
+
+    font-family: 'Shrikhand', italic;
+    font-weight: 400;
+    font-size: 28px;
+
+
+}
+
+.first-menu--title__headline i {
+
+    font-size: 22px;
+}
+
+/* first--menu--title--headline--end */
+
+
+
+.container--first-menu__list {
+    padding: 15px;
+    padding-bottom: 65px;
+    background-color: #F6F6F6;
+    margin-bottom: -44px;
+
+}
+
+.first-menu--Title {
+
+    font-size: 17px;
+
+}
+
+.first-menu--Title p {
+
+    border-bottom: 3px solid #99E2D0;
+    width: 40px;
+
+}
+
+.first-menu--list__entree {
+
+    background-color: white;
+    height: 70px;
+    width: 100%;
+    border-radius: 15.0431px;
+    box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+
+}
+
+.first-menu--list__entree h4 {
+    font-size: 18px;
+
+}
+
+.first-menu--list_plat {
+
+    display: flex;
+    justify-content: space-between;
+
+
+
 }
 
 
 
+.titre_button {
 
+    background-color: #F7F7F7;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    height: 300px;
+
+
+}
+
+.titre_button p {
+
+    color: #353535;
+    margin-bottom: 27px;
+}
+
+.button_explorer {
+
+    height: 50px;
+    border-radius: 25px;
+    font-size: 16px;
+    margin: 0 82px;
+    background: linear-gradient(180deg, rgba(255, 121, 218, 1) 0%, rgba(147, 86, 220, 1) 100%);
+    color: white;
+    border: none;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
+
+
+}
+
+
+.footer__menu {
+
+
+    background-color: #353535;
+    color: white;
+    padding: 15px 25px;
+    height: 197px;
+    margin-top: -164px;
+
+
+}
+
+.footer__menu h1 {
+
+    font-size: 18px;
+    font-family: 'Shrikhand', italic;
+    font-weight: 400;
+
+}
+
+.footer__menu ul {
+
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer__menu li i {
+
+    margin-right: 10px;
+
+}
+
+
+/* Version desktop */
+
+
+@media screen and (min-width: 768px){
+
+    
+    
+    
+    .task--functioning__list {
+        
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        
+        
+    }
+    
+    .container--functioning__list{
+
+        padding: 0 200px;
+    }
+
+    .container--restaurants__cards{
+
+       
+        
+    }
+
+    .cards--block{
+
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    .pop-up{
+       
+display: flex;
+
+    }
+    
+    
+}
