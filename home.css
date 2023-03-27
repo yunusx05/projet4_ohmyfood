@@ -50,10 +50,6 @@ body {
 
 
 
-
-
-
-
 /* Mobile_first */
 
 
@@ -81,11 +77,6 @@ body {
 }
 
 
-
-
-
-
-
 .search_Button {
 
     text-align: center;
@@ -109,54 +100,120 @@ body {
 }
 
 
-
-
-/* functioning__list_start */
-
-
-
-.bold{
-
+.title_button_home {
+    
+    background-color: #F7F7F7;
     display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    padding-bottom: 55px;
+    
+    
+    
+    
 }
 
-.bold{
+.title_button_home h1{
 
+    padding: 25px;
+    font-size: 25px;
+    padding-bottom: 2px;
+}
+
+
+.title_button_home p {
+
+    color: #353535;
+    padding: 25px;
+    padding-top: 10px;
+
+font-size: 18px;
+}
+
+.button_explorer {
+
+    height: 50px;
+    width: 211px;
+    border-radius: 25px;
+    font-size: 16px;
     margin: auto;
+    background: linear-gradient(180deg, rgba(255, 121, 218, 1) 0%, rgba(147, 86, 220, 1) 100%);
+    color: white;
+    border: none;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
+    position: relative;
+
+
+
+
+
+}
+
+.button_explorer:hover {
+    transform: scale(1.04);
+    transition-duration: 0.3s;
+    cursor: pointer;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.712);
+}
+
+
+
+
+
+
+
+
+
+.cards span {
+
+    position: absolute;
+    content: "";
+    right: 10px;
+    top: 20px;
+    font-weight: bold;
+    background-color: #99E2D0;
+    color: #2FAF94;
+    padding: 0.5rem;
+    width: 76px;
+}
+
+
+/* partie fonctionnement */
+
+.menu {
+    margin-bottom: 2rem;
+  }
+  .menu h2 {
+    display: flex;
+    text-indent: 8%;
+    margin: 1rem 0 0 1rem;
     margin-bottom: 15px;
-    margin-top: 50px;
-    
-}   
-
-
-.choix-menu{
-    
+    padding-top: 30px;
+  }
+  .menu ol {
     list-style: none;
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
     gap: 3rem;
-    margin-bottom: 20px;
-    
-    
-}
-
-.choix-menu li {
-
-     position: relative;
+    justify-content: center;
+  }
+  .menu li {
     width: 280px;
     background-color: #F6F6F6;
     border-radius: 1rem;
     padding: 1.5rem 0;
     box-shadow: 0 3px 5px darkgray;
     transition: transform 1s;
-    font-size: 16px;
-    color: #000000;
-    font-weight: 500;
-}
-
-.choix-menu span{
-
+    font-size: 1.1rem;
+  }
+  .menu i {
+    margin-right: 0.5rem;
+    color: #7E7E7E;
+    
+  }
+  .menu span {
     position: relative;
     left: -1rem;
     border: 1px solid #9356dc;
@@ -165,89 +222,50 @@ body {
     font-weight: bold;
     background-color: #9356dc;
     color: white;
-}
-
-.choix-menu i {
-    
-    color: #7E7E7E;
-    margin-right: 12px;
-    
-}
-
- li:hover{
-
-   cursor: pointer;
+  }
+  .menu span:hover {
+    cursor: pointer;
+  }
+  .menu li:hover {
+    cursor: pointer;
     background-color: #F5EDFF;
     
-}
-
-.fa-solid:hover{
-
-    color: #9356DC;
+  }
+  .menu li:hover i {
+    color: #9356dc;
 
 }
 
+/* partie restaurants */
 
-/* test */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* functioning__list_end */
-
-
-
-/* restaurants_cards_start */
 
 .container--restaurants__cards {
 
-
-
-    background-color: #F2F2F2;
-    
-    padding-top: 42px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: #F7F7F7;
+    padding: 10px;
+    padding-top: 48px;
+    padding-bottom: 90px;
 }
 
-
-.cards span {
-
-    position: absolute;
-  content: "";
-  right: 10px;
-  top: 20px;
-  font-weight: bold;
-  background-color: #99E2D0;
-  color: #2FAF94;
-  padding: 0.5rem;
-  width: 76px;
-}
-
-
-.cards--block {
+.cards--block  {
 
     display: flex;
     flex-direction: column;
-    gap: 19px;
-    padding-bottom: 81px ;
-
+    gap: 20px;
 
 
 }
 
+.Title--restaurants__cards{
+
+    
+    
+    text-indent: 4%;
+
+}
 
 
 .cards {
@@ -261,7 +279,6 @@ body {
 
 
 }
-
 
 
 .img_cards {
@@ -307,54 +324,9 @@ body {
 }
 
 
-/* animation coeur page menu */
-
-.heart__pm {
-    font-size: 21px;
-    display: flex;
-    justify-content: flex-end;
-    
-
-}
-
-
-
-
-
-.heart2__pm {
-    position: relative;
-
-    background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
-    ;
-    color: transparent;
-    -webkit-background-clip: text;
-    transition: all 300ms ease-in-out;
-    opacity: 0;
-
-}
-
-.heart2__pm:hover {
-
-    opacity: 1;
-    transform: scale(1.05);
-    
-}
-
-
-.heart1__pm {
-
-    position: absolute;
-
-
-
-
-}
-
-
-
-
 
 .heart {
+
     font-size: 21px;
     display: flex;
     justify-content: flex-end;
@@ -363,39 +335,31 @@ body {
 }
 
 
-
-
-
 .heart2 {
+
     position: relative;
 
     background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
     ;
     color: transparent;
     -webkit-background-clip: text;
-    transition: all 300ms ease-in-out;
+    transition: all 500ms ease-in-out;
     opacity: 0;
 
 }
-
-.heart2:hover {
-
-    opacity: 1;
-    transform: scale(1.05)
-}
-
 
 .heart1 {
 
     position: absolute;
 
-
-
-
 }
 
 
-/* restaurants_cards_end */
+.heart2:hover {
+
+    opacity: 1;
+    transform: scale(1.10)
+}
 
 
 
@@ -412,11 +376,12 @@ body {
     flex-direction: column;
 }
 
-.footer h1 {
+.footer h2 {
 
     font-size: 18px;
     font-family: 'Shrikhand', italic;
     font-weight: 400;
+    padding-bottom: 12px;
 
 }
 
@@ -434,569 +399,142 @@ body {
 
 }
 
-
-
 /* footer_end */
 
 
 
-
-
-
-
-
-/* Page-menu--1  */
-
-
-/* header--first--menu--start */
-.arrow__logo{
-
-   display: flex; 
-}
-.logo{
-
-    display: flex;
-    justify-content: center;
-    flex-basis: 2rem;
-    margin-left: 1rem;
-    align-items: center;
-}
-
-.titre{
-
-    display: flex;
-    justify-content: center;
-    flex-basis: 100%;
-}
-
-.titre h1 {
-    font-family: "Shrikhand", cursive;
-
-
-}
-.first-menu--img__ img {
-
-    height: 275px;
-    width: 100%;
-    object-fit: cover;
-
-
-
-}
-
-/* header--first--menu--end */
-
-
-/* first--menu--title--start */
-
-
-.first-menu--title__headline {
-
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    position: relative;
-    background: #F7F7F7;
-    border-radius: 40px 40px 0px 0px;
-    margin-top: -29px;
-
-}
-
-.first-menu--title__headline h1 {
-
-    font-family: 'Shrikhand', italic;
-    font-weight: 400;
-    font-size: 28px;
-
-
-}
-
-.first-menu--title__headline i {
-
-    font-size: 22px;
-}
-
-/* first--menu--title--headline--end */
-
-
-
-.container--first-menu__list {
-    padding: 15px;
-    padding-bottom: 65px;
-    background-color: #F6F6F6;
-    margin-bottom: -44px;
-    position: relative;
-
-}
-
-.first-menu--Title {
-
-    font-size: 17px;
-
-}
-
-.first-menu--Title p {
-
-    border-bottom: 3px solid #99E2D0;
-    width: 40px;
-
-}
-
-
-
-
-.first-menu--list__entree {
-
-    background-color: white;
-    height: 70px;
-    width: 100%;
-    border-radius: 15.0431px;
-    box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
-
-    margin-bottom: 15px;
-    margin-top: 15px;
-    overflow: hidden;
-
-}
-
-
-
-
-.first-menu--list__entree h4 {
-    font-size: 18px;
-
-}
-
-.first-menu--list_plat {
-
-    display: flex;
-
-
-
-
-}
-
-.first_menu--list__title {
-
-    display: flex;
-    flex-direction: column;
-    padding: 15px;
-    gap: 5px
-}
-
-.prix {
-    margin-left: auto;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    font-weight: 900;
-    margin-bottom: 15px;
-}
-
-.check {
-
-    background-color: #99E2D0;
-    font-size: 17px;
-    color: white;
-    width: 59px;
-    height: 71px;
-    border-radius: 0px 15px 15px 0px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 12px;
-    margin-right: -60px;
-
-
-}
-
-.check i {
-
-    color: #99E2D0;
-    border-radius: 50%;
-    background-color: white;
-    height: 30px;
-    width: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center
-}
-
-
-.first-menu--list_plat:hover {
-
-    margin-right: 60px;
-    transition: 0.8s
-}
-
-
-
-
-
-
-.titre_button {
-
-    background-color: #F7F7F7;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding: 20px;
-    
-
-
-}
-
-
-
-.titre_button p {
-
-    color: #353535;
-    padding: 18px 0 18px 0;
-}
-
-.button_explorer {
-
-    height: 50px;
-    width: 211px;
-    border-radius: 25px;
-    font-size: 16px;
-    margin: auto;
-    background: linear-gradient(180deg, rgba(255, 121, 218, 1) 0%, rgba(147, 86, 220, 1) 100%);
-    color: white;
-    border: none;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
-    position: relative;
-
-
-
-
-
-}
-
-.button_explorer:hover {
-    transform: scale(1.04);
-    transition-duration: 0.3s;
-    cursor: pointer;
-    background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.712);
-}
-
-
-
-.button_commander {
-
-    height: 50px;
-    width: 211px;
-    border-radius: 25px;
-    font-size: 16px;
-    margin: auto;
-    background: linear-gradient(180deg, rgba(255, 121, 218, 1) 0%, rgba(147, 86, 220, 1) 100%);
-    color: white;
-    border: none;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
-    position: relative;
-    margin-bottom: 210px;
-
-
-
-
-
-}
-
-.button_commander:hover {
-    transform: scale(1.04);
-    transition-duration: 0.3s;
-    cursor: pointer;
-    background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.712);
-}
-
-
-
-
-
-.footer__menu {
-
-
-    background-color: #353535;
-    color: white;
-    padding: 15px 25px;
-    height: 197px;
-    margin-top: -164px;
-
-
-}
-
-.footer__menu h1 {
-
-    font-size: 18px;
-    font-family: 'Shrikhand', italic;
-    font-weight: 400;
-
-}
-
-.footer__menu ul {
-
-
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.footer__menu li i {
-
-    margin-right: 10px;
-
-}
-
-
 /* Version desktop */
 
+@media screen and (min-width: 1023px){
 
-@media screen and (min-width: 768px) {
+    .cards--block{
 
-    
-    
-    
-    
-    
-    
-    
-
-    .task--functioning__list {
-
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-
-        
-    }
-
-    .container--functioning__list {
-
-        padding: 0 200px;
-        margin-top: 50px;
-    }
-
-    
-    
-    .cards--block {
 
         display: flex;
         flex-direction: row;
         
-        
     }
 
-
-    
-    
-    
-    .footer {
-        
-        justify-content: center;
+    .footer{
+        display: flex;
+        gap: 30px;
         flex-direction: row-reverse;
         align-items: center;
-        gap: 78px;
-
-    }
-    
-    .footer ul {
-        
-        flex-direction: row;
-        gap: 78px;
-    }
-
-    .container--restaurants__cards {
-        
-        margin-top: 80px;
-    }
-
-    .container--restaurants__cards h2 {
-        
-        margin-bottom: 30px;
-        
-    }
-    
-    .container--functioning__list h2 {
-        margin-bottom: 15px;
-    }
-
-    
-}
-    /* menus--desktop-- */
-    
-    
-    .menus {
-        
-        padding: 39px 193px;
-    }
-    
-    .first-menu--title__headline {
-
         justify-content: center;
-        align-items: center;
-        gap: 20px;
-        margin-top: -99px;
+
 
     }
 
+    .footer ul{
 
-    .first-menu--list__entree {
-        max-width: 634px;
-    }
-
-    .container--first-menu__list {
         display: flex;
-        flex-direction: column;
-        align-items: center;
+    flex-direction: row;
+    gap: 30px;
     }
 
+    .footer h2{
+        padding-top: 10px;
+}
+
+.container--restaurants__cards  {
+
+    padding: 60px 0 90px 100px;
+}
+
+
+
+@media screen and (min-width: 1440px){
     
+    .menu h2{
+    
+        text-indent: 120%;  
+    }
 
 
+
+    }
+}
 
 /* animation */
 
 
 /* loader */
 
-.loader{
-
-    position: fixed;
-    background: white;
-    height: 100vh;
-    inset: 0;
+.loader {
+    background-color: #ecf0f1ea;
+    overflow: hidden;
     z-index: 1;
-    opacity: 1;
-    animation-duration: 4s;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0; left: 0;
+    display: flex;
+    align-items: center;
+    align-content: center; 
+    justify-content: center;     
+    animation-duration: 5s;
     animation-name: loader;
     animation-fill-mode: forwards;
 
-}
+  }
+  
+  .loader__element1 {
+    border-radius: 100%;
+    border: 5px solid #99E2D0 ;
+    margin: 10px;
+    
+  }
+  .loader__element2 {
+    border-radius: 100%;
+    border: 5px solid #9356DC ;
+    margin: 10px;
+  }
+  .loader__element3 {
+    border-radius: 100%;
+    border: 5px solid #003A68 ;
+    margin: 10px;
+  }
+  
+  .loader__element1 {
+    animation: preloader .6s ease-in-out alternate infinite;
+  }
+  .loader__element2 {
+    animation: preloader .6s ease-in-out alternate .2s infinite;
+  }
+  
+  .loader__element3 {
+    animation: preloader .6s ease-in-out alternate .4s infinite;
+  }
+  
+  @keyframes preloader {
+    100% { transform: scale(2); }
 
-@keyframes loader {
+  }
+  @keyframes loader {
 
-   
+
     0% {
         opacity: 1;
     }
+
     50% {
         opacity: 1;
     }
-    
+
     99% {
         opacity: 0;
         transform: translateX(0%);
     }
-    
+
     100% {
         transform: translateX(-100%);
         opacity: 0;
     }
-    
+
 }
-
-
-.cs-loader-inner {
-    transform: translateY(-50%);
-    top: 50%;
-    position: absolute;
-    width: calc(100% - 200px);
-    color: #095cf7;
-    margin-left: 10px;
-    text-align: center;
-    
-
-  }
-  
-  .cs-loader-inner label {
-    font-size: 40px;
-    opacity: 0;
-    display:inline-block;
-  }
-  
-  @keyframes lol {
-    0% {
-      opacity: 0;
-      transform: translateX(-300px);
-    }
-    33% {
-      opacity: 1;
-      transform: translateX(0px);
-    }
-    66% {
-      opacity: 1;
-      transform: translateX(0px);
-    }
-    100% {
-      opacity: 0;
-      transform: translateX(300px);
-    }
-  }
-  
- 
-  
-  .cs-loader-inner label:nth-child(6) {
-    animation: lol 3s infinite ease-in-out;
-    animation: lol 3s infinite ease-in-out;
-  }
-  
-  .cs-loader-inner label:nth-child(5) {
-    animation: lol 3s 100ms infinite ease-in-out;
-    animation: lol 3s 100ms infinite ease-in-out;
-  }
-  
-  .cs-loader-inner label:nth-child(4) {
-    animation: lol 3s 200ms infinite ease-in-out;
-    animation: lol 3s 200ms infinite ease-in-out;
-  }
-  
-  .cs-loader-inner label:nth-child(3) {
-    animation: lol 3s 300ms infinite ease-in-out;
-    animation: lol 3s 300ms infinite ease-in-out;
-  }
-  
-  .cs-loader-inner label:nth-child(2) {
-    animation: lol 3s 400ms infinite ease-in-out;
-    animation: lol 3s 400ms infinite ease-in-out;
-  }
-  
-  .cs-loader-inner label:nth-child(1) {
-    animation: lol 3s 500ms infinite ease-in-out;
-    animation: lol 3s 500ms infinite ease-in-out;
-  }
 
 /* fade in */
 
-@keyframes fadein {
-    0% {
-        opacity: 0;
-    }
 
-    100% {
-        opacity: 1;
-    }
-}
-
-
- #elem1, #elem2 ,#elem3{
-    opacity: 0;
-    animation-name: fadein;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-    animation-delay: 1s;
-}
-
-#elem2 {
-    animation-delay: 4s;
-    
-    opacity: 1
-}
-
-#elem3{
-    animation-delay: 4s;
-    opacity: 1
-}
 
 

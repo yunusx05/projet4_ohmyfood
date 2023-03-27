@@ -5,245 +5,143 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="./menus.css">
-    <script src="https://kit.fontawesome.com/9bbe710e32.js" crossorigin="anonymous"></script>
-
-    <title>La note enchantée</title>
-
+    <meta name="description" content="restaurant à la française">
+    <script src="https://kit.fontawesome.com/0faa74c727.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./menus.css">
+    <title>La note enchantéet</title>
 </head>
 
 <body>
 
-
-
-    <header>
-
-        <div class="arrow__logo">
-            <div class="logo">
-                <!-- lien de retour vers la page principale -->
-                <a href="./home.html"><i class="fa-solid fa-arrow-left"></i></a>
-            </div>
-            <div class="titre">
-                <h1>ohmyfood</h1>
-            </div>
-        </div>
-
-
-        <div class="first-menu--img__">
-            <img src="./img-logo/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
-                alt="image menu la note enchantée">
-
-        </div>
-
-
-
+    <header class="header">
+        <a class="header__return" href="./home.html">
+            <i class="fa-solid fa-arrow-left"></i>
+        </a>
+        <h1>ohmyfood</h1>
     </header>
 
-    <Main class="menus">
+    <main class="main">
+        <img class="main__banner" src="./img-logo/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
+            alt="Plat sur plaque en céramique blanche">
+        <section class="main__menu">
+            <div class="main__menu__title">
+                <h2>La note enchantée</h2>
+                <div class="heart__menu">
+                    <div class="heart3"><i class=" far fa-heart"></i></div>
+                    <div class="heart4"><i class=" fas fa-heart"></i></div>
 
-
-
-
-
-        <div class="first-menu--title__headline">
-            <h1>La note enchantée</h1>
-            <div class="heart__pm">
-                <div class="heart1__pm"><i class=" far fa-heart"></i></div>
-                <div class="heart2__pm"><i class=" fas fa-heart"></i></div>
-            </div>
-        </div>
-
-
-        <div class="container--first-menu__list">
-
-
-            <!-- ENTREE -->
-            <div class="first-menu--Title">
-                <p>ENTRES</p>
-            </div>
-
-            <div class="first-menu--list__entree" id="elem1">
-                <div class="first-menu--list_plat">
-                    <div class="first_menu--list__title">
-                        <h4>Ravioles de foie grass</h4>
-                        <p>Accompagnées de leur crème à la truffe</p>
-                    </div>
-                    <span class="prix">25€</span>
-                    <div class="check">
-                        <i class="fa-sharp fa-solid fa-check"></i>
-                    </div>
                 </div>
             </div>
 
-            <div class="first-menu--list__entree" id="elem1">
-                <div class="first-menu--list_plat">
-                    <div class="first_menu--list__title">
-                        <h4>Caviar osciètre</h4>
+            <div class="main__menu__starter">
+                <h3>Entrées</h3>
+                <div class="meal">
+                    <div class="meal__description">
+                        <h4>Ravioles de foie gras </h4>
+                        <p>Accompagnées de leur crème à la truffe </p>
+                    </div>
+                    <p class="meal__price">25€</p>
+                    <div class="meal__check">
+                        <i class="fa-sharp fa-solid fa-check"></i>
+                    </div>
+
+                </div>
+                <div class="meal">
+                    <div class="meal__description">
+                        <h4>Caviar osciètre </h4>
                         <p>Sur blini à la farine de blé noir</p>
                     </div>
-                    <span class="prix">35€</span>
-                    <div class="check">
-                        <i class="fa-sharp fa-solid fa-check"></i>
-                    </div>
+                    <p class="meal__price">35€</p>
+                    <div class="meal__check"><i class="fa-sharp fa-solid fa-check"></i></div>
                 </div>
-            </div>
-
-            <div class="first-menu--list__entree" id="elem1">
-                <div class="first-menu--list_plat">
-                    <div class="first_menu--list__title">
-                        <h4>Homard et espuma de...</h4>
-                        <p>Marinés aux zestes d'orange </p>
+                <div class="meal">
+                    <div class="meal__description">
+                        <h4>Homard et espuma de potiron</h4>
+                        <p>Marinés aux zestes d'orange</p>
                     </div>
-                    <span class="prix">25€</span>
-                    <div class="check">
-                        <i class="fa-sharp fa-solid fa-check"></i>
-                    </div>
+                    <p class="meal__price">20€</p>
+                    <div class="meal__check"><i class="fa-sharp fa-solid fa-check"></i></div>
                 </div>
-            </div>
-            <div class="first-menu--list__entree" id="elem1">
-                <div class="first-menu--list_plat">
-                    <div class="first_menu--list__title">
+                <div class="meal">
+                    <div class="meal__description">
                         <h4>Foie gras de canard cuit entier</h4>
                         <p>Confiture de figue et pain toasté</p>
                     </div>
-                    <span class="prix">35€</span>
-                    <div class="check">
-                        <i class="fa-sharp fa-solid fa-check"></i>
-                    </div>
+                    <p class="meal__price">35€</p>
+                    <div class="meal__check"><i class="fa-sharp fa-solid fa-check"></i></div>
                 </div>
             </div>
-
-            <!-- PLATS -->
-            <div class="first-menu--Title">
-                <p>PLATS</p>
-            </div>
-
-            <div class="first-menu--list__entree" id="elem2">
-                <div class="first-menu--list_plat">
-                    <div class="first_menu--list__title">
+            <div class="main__menu__dish">
+                <h3>Plats</h3>
+                <div class="meal">
+                    <div class="meal__description">
                         <h4>Noix de coquilles Saint-Jacques</h4>
                         <p>Sur lit de purée de céleri-rave</p>
                     </div>
-                    <span class="prix">40€</span>
-                    <div class="check">
-                        <i class="fa-sharp fa-solid fa-check"></i>
-                    </div>
+                    <p class="meal__price">40€</p>
+                    <div class="meal__check"><i class="fa-sharp fa-solid fa-check"></i></div>
                 </div>
-            </div>
-
-            <div class="first-menu--list__entree" id="elem2">
-                <div class="first-menu--list_plat">
-                    <div class="first_menu--list__title">
+                <div class="meal">
+                    <div class="meal__description">
                         <h4>Langoustine poêlée</h4>
                         <p>Purée de patate douce</p>
                     </div>
-                    <span class="prix">35€</span>
-                    <div class="check">
-                        <i class="fa-sharp fa-solid fa-check"></i>
-                    </div>
+                    <p class="meal__price">35€</p>
+                    <div class="meal__check"><i class="fa-sharp fa-solid fa-check"></i></div>
                 </div>
-            </div>
-
-            <div class="first-menu--list__entree" id="elem2">
-                <div class="first-menu--list_plat">
-                    <div class="first_menu--list__title">
+                <div class="meal">
+                    <div class="meal__description">
                         <h4>Mijoté de queue de bœuf </h4>
                         <p>Et riz sauvage aux zestes de citron</p>
                     </div>
-                    <span class="prix">44€</span>
-                    <div class="check">
-                        <i class="fa-sharp fa-solid fa-check"></i>
-                    </div>
+                    <p class="meal__price">44€</p>
+                    <div class="meal__check"><i class="fa-sharp fa-solid fa-check"></i></div>
                 </div>
             </div>
-
-            <!-- DESSERTS -->
-            <div class="first-menu--Title">
-                <p>DESSERTS</p>
-            </div>
-            <div class="first-menu--list__entree" id="elem3">
-                <div class="first-menu--list_plat">
-                    <div class="first_menu--list__title">
+            <div class="main__menu__dessert">
+                <h3>Désserts</h3>
+                <div class="meal">
+                    <div class="meal__description">
                         <h4>Macaron noisette et chocolat</h4>
-                        <p>Glace au caramel brun et sel de Guérande </p>
+                        <p>Glace au caramel brun et sel de Guérande</p>
                     </div>
-                    <span class="prix">18</span>
-                    <div class="check">
-                        <i class="fa-sharp fa-solid fa-check"></i>
-                    </div>
+                    <p class="meal__price">18€</p>
+                    <div class="meal__check">
+                        <i class="fa-sharp fa-solid fa-check"></i></div>
                 </div>
-            </div>
-            
-            <div class="first-menu--list__entree" id="elem3">
-                <div class="first-menu--list_plat">
-                    <div class="first_menu--list__title">
+                <div class="meal">
+                    <div class="meal__description">
                         <h4>Baba au rhum revisité </h4>
                         <p>Avec son coulis de citron</p>
                     </div>
-                    <span class="prix">22€</span>
-                    <div class="check">
-                        <i class="fa-sharp fa-solid fa-check"></i>
+                    <p class="meal__price">22€</p>
+                    <div class="meal__check"><i class="fa-sharp fa-solid fa-check"></i></div>
+                </div>
+                <div class="meal">
+                    <div class="meal__description">
+                        <h4>Tarte au citron meringuée</h4>
+                        <p>Déstructurée</p>
                     </div>
+                    <p class="meal__price">23€</p>
+                    <div class="meal__check"><i class="fa-sharp fa-solid fa-check"></i></div>
                 </div>
-                <div class="first-menu--list__entree" id="elem3">
-                </div>
-                    <div class="first-menu--list_plat">
-                        <div class="first_menu--list__title">
-                            <h4>Baba au rhum revisité </h4>
-                            <p>Avec son coulis de citron</p>
-                        </div>
-                        <span class="prix">22€</span>
-                        <div class="check">
-                            <i class="fa-sharp fa-solid fa-check"></i>
-                        </div>
-                    </div>
-
-                </div>
-                    <div class="first-menu--list__entree" id="elem3">
-                        <div class="first-menu--list_plat">
-                            <div class="first_menu--list__title">
-                                <h4>Tarte au citron meringuée </h4>
-                                <p>Déstructurée</p>
-                            </div>
-                            <span class="prix">23€</span>
-                            <div class="check">
-                                <i class="fa-sharp fa-solid fa-check"></i>
-                            </div>
-                        </div>
-                    </div>
-
-
-
-            <a href="#">
-                <div class="titre_button">
-
-
-
-                    <button class="button_commander">
-                        Commander
-                    </button>
-
-                </div>
-            </a>
-
-            </section>
-
-
-
-    </Main>
-
+                <button class="button_explorer__menu">Commander</button>
+            </div>
+        </section>
+    </main>
 
     <footer>
         <section class="footer">
 
-            <h1>Ohmyfood</h1>
+            <h2>Ohmyfood</h2>
+
             <ul>
 
                 <li>
                     <i class="fa-solid fa-utensils"></i>Proposer un restaurant
                 </li>
 
-                </li>
+                
 
                 <li><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</li>
                 <li>Mentions légales</li>
@@ -252,9 +150,6 @@
 
                     </a>
                 </li>
-
-
-
 
             </ul>
 
@@ -265,27 +160,6 @@
 
     </footer>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </body>
+
+</html>

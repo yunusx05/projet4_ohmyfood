@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="./styles.css">
+    <link rel="stylesheet" type="text/css" href="./home.css">
     <script src="https://kit.fontawesome.com/9bbe710e32.js" crossorigin="anonymous"></script>
 
     <title>Ohmyfood</title>
@@ -20,14 +20,9 @@
 
 
     <div class="loader">
-        <div class="cs-loader-inner">
-            <label>🥄</label>
-            <label>🥢</label>
-            <label>🍸</label>
-            <label>🍗</label>
-            <label>🧂</label>
-
-        </div>
+        <span class="loader__element1"></span>
+        <span class="loader__element2"></span>
+        <span class="loader__element3"></span>
     </div>
 
 
@@ -54,7 +49,7 @@
         </div>
 
 
-        <div class="titre_button">
+        <div class="title_button_home">
 
 
             <h1>
@@ -81,60 +76,26 @@
 
         <!-- Fonctionnement_liste  -->
 
-        <aside class='fonctionnement'> 
-                    
-            <!-- titre -->
-            <h2 class='fonctionnement__titre'>Fonctionnement</h2>  
-
-            <!-- zone des boutons, admétons que c'est une navigation -->
-            <div class='fonctionnement__explication'>   
-                
-                <!-- bouton 1 de fonctionnement -->
-                <button class='bouton'>
-
-                    <!-- numero -->
-                    <span class="bouton--numero">1</span> 
-
-                    <!-- icones --> <!-- double classe car taille icone differante pour pas faire de répétitions -->
-                    <i class="fas fa-mobile-alt bouton--noir bouton--tel"></i>
-                    <span class='fa bouton--violet bouton--tel'>&#xf3cd;</span> 
-
-                    <!-- texte -->
-                    Choisissez un restaurant 
-
-                </button>  
-
-                <!-- bouton 2 de fonctionnement -->
-                <button class='bouton'>
-
-                    <!-- numero -->
-                    <span class="bouton--numero">2</span> 
-
-                    <!-- icones -->
-                    <i class="fas fa-list-ul bouton--noir"></i>
-                    <span class='fa bouton--violet'>&#xf0ca;</span> 
-
-                    <!-- texte -->
+        <section class="menu">
+            <h2 class="bold">Fonctionnement</h2>
+            <ol id="choix-menu">
+                <li>
+                    <span>1</span>
+                    <i class="choix1 fa-solid fa-mobile-screen-button"></i>
+                    Choisissez un restaurant
+                </li>
+                <li>
+                    <span>2</span>
+                    <i class="choix2 fa-solid fa-list"></i>
                     Composez votre menu
-
-                </button>  
-                
-                <!-- bouton 3 de fonctionnement -->
-                <button class='bouton'>
-
-                    <!-- numero -->
-                    <span class="bouton--numero">3</span> 
-
-                    <!-- icones -->
-                    <i class="fas fa-store bouton--noir"></i>
-                    <span class='fa bouton--violet'>&#xf54e;</span> 
-
-                    <!-- texte -->
+                </li>
+                <li>
+                    <span>3</span>
+                    <i class="choix3 fa-sharp fa-solid fa-store"></i>
                     Dégustez au restaurant
-
-                </button>    
-            </div>       
-        </aside>    
+                </li>
+            </ol>
+        </section>
 
 
 
@@ -179,11 +140,11 @@
 
 
                     <div class="cards ">
-                        <a href="./menu2.html">
+                        <a href="./La_note_enchantée.html">
 
                             <div>
                                 <img class="img_cards" src="./img-logo/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
-                                alt="image la note enchantée  ">
+                                    alt="image la note enchantée  ">
                                 <span class="pop-up">Nouveau</span>
                             </div>
                             <div class="text_cards">
@@ -211,7 +172,7 @@
 
 
                     <div class="cards ">
-                        <a href="./menu3.html">
+                        <a href="./A_la_française.html">
 
                             <div>
                                 <img class="img_cards" src="./img-logo/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
@@ -235,7 +196,7 @@
                     <!-- card 4 -->
 
                     <div class="cards ">
-                        <a href="./menu4.html">
+                        <a href="./Le_délice_des_sens.html">
 
                             <div>
                                 <img class="img_cards"
@@ -256,14 +217,8 @@
 
                     </div>
                 </div>
+            </div>
         </section>
-
-
-
-
-
-
-
 
 
 
@@ -273,14 +228,14 @@
     <footer>
         <section class="footer">
 
-            <h1>Ohmyfood</h1>
+            <h2>Ohmyfood</h2>
+
             <ul>
 
                 <li>
                     <i class="fa-solid fa-utensils"></i>Proposer un restaurant
                 </li>
 
-                </li>
 
                 <li><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</li>
                 <li>Mentions légales</li>
@@ -289,9 +244,6 @@
 
                     </a>
                 </li>
-
-
-
 
             </ul>
 
@@ -302,7 +254,7 @@
 
     </footer>
 
-    </a>
+
 
 </body>
 
