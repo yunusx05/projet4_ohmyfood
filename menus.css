@@ -141,7 +141,7 @@ body {
 
 
     background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
-    ;
+    
     color: transparent;
     -webkit-background-clip: text;
     transition: all 500ms ease-in-out;
@@ -334,6 +334,38 @@ body {
 
 
 
+.button_explorer {
+
+    height: 50px;
+    width: 211px;
+    border-radius: 25px;
+    font-size: 16px;
+    margin: auto;
+    background: linear-gradient(180deg, rgba(255, 121, 218, 1) 0%, rgba(147, 86, 220, 1) 100%);
+    color: white;
+    border: none;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+
+
+
+
+
+}
+
+.button_explorer:hover {
+    transform: scale(1.04);
+    transition-duration: 0.3s;
+    cursor: pointer;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.712);
+}
  
 
 
@@ -416,7 +448,7 @@ body {
 
     .main__menu__starter, .main__menu__dish, .main__menu__dessert {
 
-        padding: 37px 114px 0 115px
+        padding: 10px 20px 5px;
     }
     .footer{
         display: flex;
@@ -453,7 +485,7 @@ body {
         
         
 
-            padding: 37px 212px 0 194px
+            padding: 37px 212px 40px 194px
         }
 
         .footer{
