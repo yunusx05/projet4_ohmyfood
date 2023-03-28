@@ -79,7 +79,15 @@ body {
 }
 
 
+.main__menu__starter,.main__menu__dish, .main__menu__dessert{
 
+    background-color:#F6F6F6 ;
+}
+
+.main__menu__starter{
+
+    margin-top: -59px;
+}
 
 .main__banner  {
 
@@ -93,10 +101,12 @@ body {
 
 }
 
-.main__menu {
+.main__menu__dessert{
 
-    background-color: #F6F6F6;
+    margin-bottom: 40px;
 }
+
+
 
 .main__menu__title {
 
@@ -167,7 +177,7 @@ body {
 }
 
 
-/* à retoucher2 */
+
 .main__menu__starter h3,
 .main__menu__dish h3,
 .main__menu__dessert h3 {
@@ -225,6 +235,7 @@ body {
     cursor: pointer;
     overflow: hidden;
     animation: fade_in 1s both;
+    background-color: white;
 }
 
 @keyframes fade_in {
@@ -360,5 +371,105 @@ body {
 .footer li i {
 
     margin-right: 10px;
+
+}
+
+
+@media screen and (min-width: 1023px){
+
+
+    .header{
+
+
+        display: flex;
+        justify-content: flex-start;
+        gap: 400px;
+    }
+
+    
+
+
+    .main__menu__title{
+
+        display: flex;
+    justify-content: center;
+
+    }
+    .main__menu{
+    
+    padding: 0 193px 0 193px;
+    }
+
+    .main__menu__starter, .main__menu__dish, .main__menu__dessert {
+
+        padding: 20px 100px 0 100px;
+    }
+    .footer{
+        display: flex;
+        gap: 30px;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: center;
+
+
+    }
+
+    .footer ul{
+
+        display: flex;
+    flex-direction: row;
+    gap: 30px;
+    }
+
+    .footer h2{
+        padding-top: 10px;
+}
+    }
+
+    @media screen and (min-width: 1440px){
+
+        .main__menu__starter, .main__menu__dish, .main__menu__dessert {
+
+            padding: 0 100px 0 100px;
+        }
+
+        .footer{
+            display: flex;
+            gap: 30px;
+            flex-direction: row-reverse;
+            align-items: center;
+            justify-content: center;
+    
+    
+        }
+    
+        .footer ul{
+    
+            display: flex;
+        flex-direction: row;
+        gap: 30px;
+        }
+    
+        .footer h2{
+            padding-top: 10px;
+    }
+
+    
+
+
+    
+    
+}
+
+@media screen and (min-width: 768px){
+
+    .header{
+    
+    
+    
+        display: flex;
+        justify-content: flex-start;
+        gap: 250px;
+    }
 
 }

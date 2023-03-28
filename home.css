@@ -441,6 +441,15 @@ font-size: 18px;
     padding: 60px 0 90px 100px;
 }
 
+.menu{
+
+    padding: 0 0 0 100px;
+}
+
+
+
+
+}
 
 
 @media screen and (min-width: 1440px){
@@ -453,7 +462,7 @@ font-size: 18px;
 
 
     }
-}
+
 
 /* animation */
 
@@ -472,7 +481,7 @@ font-size: 18px;
     align-items: center;
     align-content: center; 
     justify-content: center;     
-    animation-duration: 5s;
+    animation-duration: 3s;
     animation-name: loader;
     animation-fill-mode: forwards;
 
