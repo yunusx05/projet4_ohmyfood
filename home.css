@@ -50,6 +50,8 @@ body {
 
 
 
+
+
 /* Mobile_first */
 
 
@@ -162,10 +164,6 @@ font-size: 18px;
 
 
 
-
-
-
-
 .cards span {
 
     position: absolute;
@@ -175,7 +173,7 @@ font-size: 18px;
     font-weight: bold;
     background-color: #99E2D0;
     color: #2FAF94;
-    padding: 0.5rem;
+    padding: 8px;
     width: 76px;
 }
 
@@ -183,12 +181,11 @@ font-size: 18px;
 /* partie fonctionnement */
 
 .menu {
-    margin-bottom: 2rem;
+    margin-bottom: 32px;
   }
   .menu h2 {
     display: flex;
     text-indent: 8%;
-    margin: 1rem 0 0 1rem;
     margin-bottom: 15px;
     padding-top: 30px;
   }
@@ -196,28 +193,28 @@ font-size: 18px;
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-    gap: 3rem;
+    gap: 48px;
     justify-content: center;
   }
   .menu li {
     width: 280px;
     background-color: #F6F6F6;
-    border-radius: 1rem;
-    padding: 1.5rem 0;
+    border-radius: 16px;
+    padding: 24px 0;
     box-shadow: 0 3px 5px darkgray;
     transition: transform 1s;
-    font-size: 1.1rem;
+    font-size: 17px;
   }
   .menu i {
-    margin-right: 0.5rem;
+    margin-right: 8px;
     color: #7E7E7E;
     
   }
   .menu span {
     position: relative;
-    left: -1rem;
+    left: -16px;
     border: 1px solid #9356dc;
-    padding: 0.4rem 0.8rem;
+    padding: 6px 12px;
     border-radius: 50%;
     font-weight: bold;
     background-color: #9356dc;
@@ -259,13 +256,7 @@ font-size: 18px;
 
 }
 
-.Title--restaurants__cards{
 
-    
-    
-    text-indent: 4%;
-
-}
 
 
 .cards {
@@ -405,7 +396,7 @@ font-size: 18px;
 
 /* Version desktop */
 
-@media screen and (min-width: 1023px){
+@media screen and (min-width: 1024px){
 
     .cards--block{
 
@@ -436,28 +427,33 @@ font-size: 18px;
         padding-top: 10px;
 }
 
-.container--restaurants__cards  {
+.menu ol{
 
-    padding: 60px 0 90px 100px;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
 }
 
-.menu{
+.wrapper{
 
-    padding: 0 0 0 100px;
+    padding-left: 101px;
+    
+    }
+
+
+
 }
 
 
 
-
-}
 
 
 @media screen and (min-width: 1440px){
     
-    .menu h2{
-    
-        text-indent: 120%;  
-    }
+    .wrapper{
+
+        padding-left: 201px;
+        
+        }
 
 
 
@@ -487,31 +483,31 @@ font-size: 18px;
 
   }
   
-  .loader__element1 {
+  .loader__dot1 {
     border-radius: 100%;
     border: 5px solid #99E2D0 ;
     margin: 10px;
     
   }
-  .loader__element2 {
+  .loader__dot2 {
     border-radius: 100%;
     border: 5px solid #9356DC ;
     margin: 10px;
   }
-  .loader__element3 {
+  .loader__dot3 {
     border-radius: 100%;
     border: 5px solid #003A68 ;
     margin: 10px;
   }
   
-  .loader__element1 {
+  .loader__dot1 {
     animation: preloader .6s ease-in-out alternate infinite;
   }
-  .loader__element2 {
+  .loader__dot2 {
     animation: preloader .6s ease-in-out alternate .2s infinite;
   }
   
-  .loader__element3 {
+  .loader__dot3 {
     animation: preloader .6s ease-in-out alternate .4s infinite;
   }
   
@@ -542,7 +538,7 @@ font-size: 18px;
 
 }
 
-/* fade in */
+
 
 
 
